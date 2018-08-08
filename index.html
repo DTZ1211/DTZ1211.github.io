@@ -6,17 +6,24 @@
 </title>
 </head>
 <style>
-	img{
-		text-align:center;
-		height:800px;
-		width:100%;
-	}
+
 	a{
 		text-shadow:12px 5px 9px #F00;
 		font-family:»ªÎÄ·ÂËÎ;
 		font-weight:500;
 		font-size:22px;
 		margin:20px;
+		transition:font-size,1s;
+		padding:20px;
+		color:white;
+	}
+	a:hover{
+		font-size:24px;
+	}
+	#gdiv,#ndiv{
+		height:20px;
+		width:500px;
+		margin:10px
 	}
 </style>
 <script>
@@ -25,8 +32,10 @@
 	}
 </script>
 <body>
-	<a href="https://github.com/DTZ1211">Welcome to my github!</a>
-	<div id="img1"><img src="53f19176a0de7.jpg" /></div>
+	<div id="adiv" style="background-image:url(53f19176a0de7.jpg);width:100%;height:1000px">
+		<div id="gdiv"><a href="https://github.com/DTZ1211">Welcome to my github!</a></div>
+		<div id="ndiv"><a href="https://nf147.github.io">nf147.github.io</a></div>
+	</div>
 	
 </body>
 </html>
