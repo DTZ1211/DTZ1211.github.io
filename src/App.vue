@@ -1,0 +1,65 @@
+<template>
+	<div id="root">
+		<comment></comment>
+	</div>
+</template>
+
+<script type="module">
+			
+			import commentComp from './components/js/comment_comp.vue';
+			
+			export default{
+				name: 'root',
+				components: {
+					comment: commentComp
+				}
+			}
+			
+</script>
+
+<style>
+#root {
+    width: 400px;
+    padding: 2em;
+    margin: 2em auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 1em;
+}
+.cinput {
+    margin-bottom: 1em;
+}
+label {
+    display: flex;
+    margin: 1em 0;
+}
+label span {
+    flex-basis: 100px;
+}
+input, textarea {
+    flex: 1;
+}
+.cinput footer {
+    text-align: right;
+}
+.cinput button {
+    border: none;
+    background-color: orange;
+    padding: .4em 1em;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #e0e0e0;
+}
+
+
+.comment {
+    padding: 1em;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+}
+.comment-author {
+    color: steelblue;
+    flex-basis: 80px;
+}
+</style>
+
